@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Xammp</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<linl href="https://fonts.google.com/?width=5&slant=4&selection.family=Rouge+Script" rel="stylesheet">
+	<style>
+		
+	</style>
+
+</head>
+<body style="background-color:powderblue" >
+	<div class="hint-box">
+		
+	</div>
+	<div class="logo-1">
+		<img src="logo1.png" alt="Logo"/>
+		<h1 color=white>NITT</h1>
+	</div>
+	<div class="main-div" >
+    	<h1>Find one word answer for given picture :</h1>
+    	<br><br><br>
+    			<div id="loaddata">
+					<img id="img1"src="apple.jfif" alt="picture" align="middle" border="2">
+				</div>
+		<br><br>
+		<form fontsize="80" style="margin-top:10px">
+		<p> ANSWER : </p>
+		<input type="text" placeholder="Type Your Answer" >
+		<br><br>
+		<button class="sub-btn"  type="submit" onclick="myfun()">SUBMIT</button>
+		<button class="log-btn" type="submit" >log out</button>
+		<ul>
+		<br>
+		<li><a href="https://www.facebook.com/groups/2021885708031024/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.nitt.edu/home/academics/departments/ca/associations/acm/"target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+		<li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		</ul>
+		</form>
+	</div>
+		<br>
+
+	<div class="logo-2">
+		<img  href ="https://www.google.com/" src="logo2.jpg" alt="Logo" />
+		<h1>ACM</h1>
+	</div>
+
+	<script type="text/javascript">
+		function myfun(){
+		var req=new XMLHttpRequest();
+		req.open('GET','load1.html',true);
+		req.send();
+
+		req.onreadystatechange = function (){
+			if(req.readyState == 4 && req.status == 200){
+				document.getElementById('loaddata').innerHTML = req.responseText;
+			
+			}
+		}	
+	}
+	</script>
+
+	
+
+</body>
+</html>

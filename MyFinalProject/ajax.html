@@ -1,0 +1,26 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+		<title>Ajax</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div id="loaddata"> <h2>These is  to be change....</h2> </div>
+		<button class="btn btn-success"  id="btnclick"> Click on it </button>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btnclick").click(function(){
+				$("#loaddata").load('load.html')function(){
+						alert("These is done !! ");
+				});	
+			})
+		});	
+		</script>
+		<h2>HEllO</h2>
+		
+</body>
+</html>

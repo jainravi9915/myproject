@@ -1,0 +1,29 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+		<title>Ajax</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div id="loaddata"> <h2>These is  to be change....</h2> </div>
+		<button class="btn btn-success"  onclick="myfun()"> Click on it </button>
+	</div>
+	<script type="text/javascript">
+		function myfun(){
+			var req=new XMLHttpRequest();
+			req.open('GET','load3.html',true);
+			req.send();
+
+			req.onreadystatechange=function(){
+				if(req.readystate==4 && req.status==200);
+				document.getElementById('loaddata').innerHTML=req.responseText;
+			}
+		}
+
+		<h2>HEllO</h2>
+		
+</body>
+</html>
